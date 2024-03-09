@@ -3,7 +3,7 @@ import { Inter, Lexend_Deca } from "next/font/google";
 import "./globals.css";
 
 const inter = Inter({ subsets: ["latin"], weight: ["400", "700"] });
-const lexend_Deca = Lexend_Deca({ weight: ["400"] });
+const lexend_Deca = Lexend_Deca({ subsets: ["latin"], weight: ["400"] });
 
 export const metadata: Metadata = {
   title: "Front end mentor challenge",
