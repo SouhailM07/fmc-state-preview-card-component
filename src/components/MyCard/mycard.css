@@ -1,3 +1,27 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+#MyCard {
+  @apply bg-PrimaryDarkDesaturatedBlue  lg:w-[50rem] w-[17rem]  rounded-lg min-h-[20rem] grid max-lg:pb-[2rem];
+  @apply lg:grid-cols-2 grid-cols-1 max-lg:text-center;
+}
+#MyCard h1 {
+  @apply lg:text-[1.6rem] font-bold text-[1.4rem];
+}
+
+#MyCard ul {
+  @apply grid lg:grid-cols-3 gap-y-[1rem] max-lg:mt-[1rem] grid-cols-1 max-lg:place-items-center;
+}
+
+#MyCard__s1 {
+  @apply pt-[2rem] lg:pt-[3rem] max-w-[18rem] mx-auto lg:grid-rows-[35%_40%_1fr] grid max-lg:px-[1.5rem] max-lg:gap-y-[1rem];
+}
+#MyCard__s2 {
+  @apply max-lg:row-[1];
+}
+
+#MyCard__s2 div {
+  @apply opacity-40  h-full w-full  min-h-[10rem];
+  @apply lg:bg-[url('/image-header-desktop.jpg')] bg-[url('/image-header-mobile.jpg')] bg-cover;
+}
