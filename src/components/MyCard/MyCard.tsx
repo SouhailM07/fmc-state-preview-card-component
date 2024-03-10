@@ -29,7 +29,10 @@ export default function MyCard() {
             })}
           </ul>
         </section>
-        <section id="MyCard__s2" className="bg-PrimarySoftViolet">
+        <section
+          id="MyCard__s2"
+          className="bg-PrimarySoftViolet lg:rounded-r-sm rounded-t-sm"
+        >
           <div className=""></div>
         </section>
       </article>
