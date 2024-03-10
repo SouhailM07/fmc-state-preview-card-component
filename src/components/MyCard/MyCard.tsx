@@ -23,7 +23,7 @@ export default function MyCard() {
             Discover the benefits of data analytics and make better decisions
             regarding revenue, customer experience, and overall efficiency.
           </p>
-          <ul>
+          <ul role="list">
             {arrOfStates.map((e, i) => {
               return <Counter key={i} n={e.n} txt={e.txt} label={e.label} />;
             })}
@@ -40,7 +40,7 @@ export default function MyCard() {
 let Counter = ({ n, txt, label }: states) => {
   return (
     <>
-      <div>
+      <li role="listitem">
         <div className="flex items-center text-[1.1rem] font-bold max-lg:justify-center">
           <CountUp start={0} duration={4} end={n} className="" />
           <span>{txt}</span>
@@ -48,7 +48,7 @@ let Counter = ({ n, txt, label }: states) => {
         <span className="text-[0.6rem] uppercase text-NeutralTransparentWhite60 ">
           {label}
         </span>
-      </div>
+      </li>
     </>
   );
 };
